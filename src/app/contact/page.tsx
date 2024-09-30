@@ -55,7 +55,7 @@ export default function Contact() {
 
   return (
     <ContainerPage key="contact-page">
-      <main className={`sm:col-span-4 sm:col-start-3 sm:row-start-1 min-h-screen sm:my-28 my-16 mx-4 ${mode ? "text-white" : "text-black"}`}>
+      <main className={`sm:col-span-4 sm:col-start-3 sm:row-start-1 min-h-screen sm:my-28 my-16 mx-4 text-white`}>
         <div className="text-3xl font-semibold">Liên hệ</div>
         <div className="text-sm mt-1 text-white/60">
           Mọi người liên hệ công việc với tớ qua form này nhé.
