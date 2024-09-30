@@ -1,7 +1,7 @@
 export const linkButtons = [
   {
     id: 1,
-    link: "http://localhost:3000",
+    link: "https://portfoliowd.vercel.app",
     svg: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -18,7 +18,7 @@ export const linkButtons = [
   },
   {
     id: 2,
-    link: "http://localhost:3000/about",
+    link: "https://portfoliowd.vercel.app/about",
     svg: (
       <svg
         fill="#ffffff"
@@ -46,7 +46,7 @@ export const linkButtons = [
   },
   {
     id: 3,
-    link: "http://localhost:3000/project",
+    link: "https://portfoliowd.vercel.app/project",
     svg: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -184,7 +184,7 @@ export const linkButtons = [
   },
   {
     id: 8,
-    link: "http://localhost:3000/contact",
+    link: "https://portfoliowd.vercel.app/contact",
     svg: (
       <svg
         fill="#ffffff"

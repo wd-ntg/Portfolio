@@ -22,7 +22,7 @@ export default function About() {
           </div>
           <div className="flex items-center space-x-4 my-6">
             <div className="border-[1px] border-white rounded-md p-1 flex items-center justify-center text-center text-[11px] cursor-pointer">
-              <a className="text-white" href="http://localhost:3000/resume">
+              <a className="text-white" href="https://portfoliowd.vercel.app/resume">
                 {" "}
                 Resume
               </a>
