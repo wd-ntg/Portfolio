@@ -5,7 +5,8 @@ import { ContainerPage } from "@/components/ContainerPage";
 import { useState } from "react";
 
 export default function Resume() {
-  const [isOpenCV, setIsOpenCV] = useState<Boolean>(false);
+  const [isOpenCV, setIsOpenCV] = useState<boolean>(false);
+
 
   const handleOpenCV = () => {
     setIsOpenCV(!isOpenCV);

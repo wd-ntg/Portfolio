@@ -46,7 +46,7 @@ export function loadGLTFModel(
         resolve(obj);
       },
       undefined,
-      (error: any) => {
+      (error: unknown) => {
         reject(error);
       }
     );

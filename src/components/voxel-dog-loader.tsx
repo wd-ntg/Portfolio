@@ -13,7 +13,7 @@ export const DogSpinner = () => (
   />
 )
 
-export const DogContainer = forwardRef<HTMLDivElement, { children: any }>(
+export const DogContainer = forwardRef<HTMLDivElement, { children: React.ReactNode }>(
   ({ children }, ref) => (
     <Box
       ref={ref}

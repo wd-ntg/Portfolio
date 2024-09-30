@@ -7,10 +7,10 @@ import { linkButtons } from "../utils/data";
 import { useMode } from "@/lib/context/modeContext";
 
 export const Nav = () => {
-  const [isHovered, setIsHovered] = useState<Boolean>(false);
-  const [isHovered2, setIsHovered2] = useState<Boolean>(false);
+  const [isHovered, setIsHovered] = useState<boolean>(false);
+  const [isHovered2, setIsHovered2] = useState<boolean>(false);
 
-  const { mode, toggleMode } = useMode();
+  const { toggleMode } = useMode();
 
   const handleMode = () => {
     toggleMode();

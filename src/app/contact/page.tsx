@@ -13,7 +13,7 @@ export default function Contact() {
     message: "",
   });
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -22,7 +22,7 @@ export default function Contact() {
 
   const [captchaValue, setCaptchaValue] = useState<string | null>(null);
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     if (!captchaValue) {
       alert("Vui lòng xác thực CAPTCHA trước khi gửi.");
       return;

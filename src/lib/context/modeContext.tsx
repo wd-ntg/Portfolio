@@ -1,5 +1,4 @@
 "use client";
-import { pre } from "framer-motion/client";
 import React from "react";
 import { createContext, useState, useContext } from "react";
 
@@ -10,7 +9,7 @@ interface ModeContextType {
 
 const ModeContext = createContext<ModeContextType | undefined>(undefined);
 
-export const ModeProvider = ({ children }: { children: any }) => {
+export const ModeProvider = ({ children }: { children: React.ReactNode }) => {
   const [mode, setMode] = useState<boolean>(false);
 
   const toggleMode = () => {

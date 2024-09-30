@@ -9,7 +9,7 @@ export default function Project() {
   const [filteredRepositories, setFilteredRepositories] =
     useState(repositoryData);
 
-  const handleSearchChange = (event: any) => {
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value.toLowerCase();
     setSearchTerm(value);
     const filtered = repositoryData.filter(

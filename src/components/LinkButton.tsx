@@ -2,7 +2,6 @@
 
 import { useRouter, usePathname } from "next/navigation";
 import React, { useState } from "react";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export const LinkButton = ({
   children,
@@ -18,13 +17,12 @@ export const LinkButton = ({
   const router = useRouter();
   const pathname = usePathname();
 
-  const [isHovered, setIsHovered] = useState<Boolean>(false);
-  const [isAnimation, setIsAnimation] = useState<Boolean>(true);
+  const [isHovered, setIsHovered] = useState<boolean>(false);
 
   const rootLink = link.slice(21);
   const isActive = pathname === rootLink;
 
-  const handleNav = (link: any) => {
+  const handleNav = (link: string) => {
     if (link.slice(0, 16) === "http://localhost") {
       router.push(link);
     } else {
