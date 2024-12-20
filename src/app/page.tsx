@@ -12,8 +12,8 @@ const LazyVoxelDog = dynamic(() => import("../components/voxel-dog"), {
 });
 
 const track = {
-  title: "Bạn Đời",
-  src: "/track.mp3",
+  title: "Die With A Smile",
+  src: "/bruno.mp3",
 };
 
 export default function Home() {
@@ -22,8 +22,10 @@ export default function Home() {
   return (
     <ContainerPage key="home-page ">
       <main className="sm:col-span-4 sm:col-start-3 sm:row-start-1  sm:my-28 my-16  mx-4">
-        <div className={`text-2xl font-bold sm:text-3xl font-playfair text-white`}>
-          Nguyễn Trường Giang
+        <div
+          className={`text-2xl font-bold sm:text-3xl font-playfair text-white`}
+        >
+          Truong Giang Nguyen
         </div>
         <div className="text-sm mt-1 text-white/60">
           Web Developer / JS - TS - Golang - Java
@@ -31,11 +33,18 @@ export default function Home() {
         <div className="border-b-[1px] sm:w-[245px] border-white/20 my-4"></div>
 
         <div className="text-sm text-white/60">
-          Xin chào, tớ là Nguyễn Trường Giang (WD), sinh viên chuyên ngành Kỹ
-          thuật phần mềm tại Học viện công nghệ Bưu chính viễn thông. Hiện tại
-          tớ đang là sinh viên năm 4 và là một freelance part time. Tớ đang
-          hướng tới trở thành một Fullstack Developer và thực hiện thêm nhiều
-          ước mơ phía trước.
+          Hello, I'm Nguyễn Trường Giang (WD), a software engineering graduate
+          from the Posts and Telecommunications Institute of Technology, class
+          of 2023.
+        </div>
+        <div className="text-sm text-white/60">
+          A curious engineer trying to improve his skills and contribute to
+          creating the best possible software products. I am a curious and
+          enthusiastic learner, continuously seeking to expand my knowledge and
+          apply new skills to my daily work. Being approachable and receptive to
+          feedback is an integral part of my personality. I value input from
+          teammates and clients, always welcoming constructive criticism to
+          improve both the product and the working process
         </div>
 
         <div className="flex items-center space-x-2 my-6">
@@ -99,14 +108,17 @@ export default function Home() {
           <div className="w-6 h-6 border-[1px] border-white rounded-sm p-1 flex justify-center items-center text-white">
             k
           </div>
-          <div className="text-sm text-white/60 italic">để khám phá ,,,</div>
+          <div className="text-sm text-white/60 italic">To explore ...</div>
         </div>
 
         <div className="h-[1px] w-[152px] bg-white/20"></div>
 
         <div className="flex items-center space-x-4 my-6">
           <div className="border-[1px] border-white rounded-md p-1 flex items-center justify-center text-center text-[11px] cursor-pointer">
-            <a className="text-white" href="https://portfoliowd.vercel.app/resume">
+            <a
+              className="text-white"
+              href="https://portfoliowd.vercel.app/resume"
+            >
               {" "}
               Resume
             </a>
@@ -296,14 +308,18 @@ export default function Home() {
             </div>
           </div>
           <img
-            src={`${!mode ? "https://raw.githubusercontent.com/yunkhngn/yunkhngn/output/github-contribution-grid-snake-dark.svg" : "https://raw.githubusercontent.com/yunkhngn/yunkhngn/output/github-contribution-grid-snake.svg"}`}
+            src={`${
+              !mode
+                ? "https://raw.githubusercontent.com/yunkhngn/yunkhngn/output/github-contribution-grid-snake-dark.svg"
+                : "https://raw.githubusercontent.com/yunkhngn/yunkhngn/output/github-contribution-grid-snake.svg"
+            }`}
             alt="Snake Eating Contributions"
             className="w-full h-full"
           />
         </div>
         <div className="h-[1px] w-[56px] bg-white/20 mt-3"></div>
         <div className="text-xs text-white/20  italic mt-4 mx-4 sm:mb-2 mb-4 h-8">
-          Dùng máy tính để có trải nghiệm tốt nhất
+          For the best experience, use a computer.
         </div>
       </main>
     </ContainerPage>

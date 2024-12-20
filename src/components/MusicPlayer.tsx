@@ -49,7 +49,7 @@ const MusicPlayer: React.FC<MusicPlayerProps> = ({ track }) => {
       <div className="w-full">
         <div className="mx-4">
           <h3 className="text-white text-2xl font-semibold">{track.title}</h3>
-          <div className="mb-4 text-white">Karik</div>
+          <div className="mb-4 text-white">Lady Gaga, Bruno Mars</div>
         </div>
         {isPlaying && (
           <div className="absolute right-[-10rem] top-8">

@@ -24,19 +24,19 @@ export default function Project() {
     <ContainerPage key="project-page">
       <main className="sm:col-span-4 sm:col-start-3 sm:row-start-1 sm:my-28 my-16 mx-4">
         <div className="text-2xl font-bold sm:text-3xl font-playfair text-white">
-          Dự án
+          Project
         </div>
         <div className="text-sm mt-1 text-white/60 ">
-          Những dự án lập trình cá nhân/pet projects của tớ từ Github.
+          My personal programming projects/pet projects from Github.
         </div>
         <div className="text-white/60 my-4 sm:w-[732px] w-[464px] sm:overflow-auto overflow-hidden">
           ..................................................................................................................................................................................................................
         </div>
         <div className="font-semibold text-white/70">
-          Tìm kiếm repository Github
+          Search for a Github repository.
         </div>
         <div className="text-sm text-white/60 my-2">
-          Các pet project/public repository sử dụng Node.js, React...
+          Projects/public repositories using NextJs, React, NodeJs,...
         </div>
         <div className="mx-2 my-4">
           <input
@@ -80,7 +80,7 @@ export default function Project() {
                       MIT License
                     </div>
                     <div className="text-sm text-black bg-white rounded-sm px-2 flex justify-center items-center">
-                      Cập nhật lúc {item.update}
+                      Updated at {item.update}
                     </div>
                   </div>
                 </div>
@@ -90,18 +90,17 @@ export default function Project() {
             </div>
           ))
         ) : (
-          <div className="text-white/60">Không tìm thấy repository nào.</div>
+          <div className="text-white/60"> No repository found.</div>
         )}
         <div className="text-sm text-white/60 mb-6">
           <a
             className="hover:text-white duration-200"
             href="https://github.com/wd-ntg"
           >
-            Xem Github của tớ ....
+            View my GitHub...
           </a>
         </div>
       </main>
-      
     </ContainerPage>
   );
 }
