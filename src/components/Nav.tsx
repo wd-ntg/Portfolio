@@ -82,7 +82,7 @@ export const Nav = () => {
         <div className={`block my-auto `}></div>
 
         <div
-        onClick={() => scrollToTop()}
+          onClick={() => scrollToTop()}
           onMouseEnter={() => setIsHovered2(true)}
           onMouseLeave={() => setIsHovered2(false)}
           className="sm:w-10 sm:h-10 w-8 h-8 bg-[#222222] p-2 relative rounded-md flex justify-center items-center hover:scale-125 duration-200 hover:translate-y-[-8px] hover:mx-2 cursor-pointer"

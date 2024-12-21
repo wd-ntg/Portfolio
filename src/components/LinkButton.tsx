@@ -23,7 +23,7 @@ export const LinkButton = ({
   const isActive = pathname === rootLink;
 
   const handleNav = (link: string) => {
-    if (link.slice(0, 19) === "https://portfoliowd") {
+    if (link.slice(0, 19) === "https://portfolio-u") {
       router.push(link);
     } else {
       window.open(link, "_blank");
