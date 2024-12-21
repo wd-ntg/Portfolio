@@ -3,6 +3,7 @@
 import { ContainerPage } from "@/components/ContainerPage";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Resume() {
   const [isOpenCV, setIsOpenCV] = useState<boolean>(false);

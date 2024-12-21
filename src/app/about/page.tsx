@@ -2,6 +2,7 @@
 
 import { ContainerPage } from "@/components/ContainerPage";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -15,14 +16,25 @@ export default function About() {
           ..................................................................................................................................................................................................................
         </div>
         <div className="flex flex-col justify-center items-center">
-          <img className="w-56 h-56 rounded-[50%]" src="/avatar.jpg" />
-          <div className="text-3xl font-semibold mt-4 text-white">Nguyễn Trường Giang</div>
+          <Image
+            src="/avatar.jpg"
+            alt="User Avatar"
+            width={224} // Tương ứng với w-56 (56 * 4 = 224px)
+            height={224} // Tương ứng với h-56
+            className="rounded-[50%]"
+          />
+          <div className="text-3xl font-semibold mt-4 text-white">
+            Nguyễn Trường Giang
+          </div>
           <div className="my-2 text-sm text-white/60">
             Software Engineer / Dev JS - TS - Golang - Java
           </div>
           <div className="flex items-center space-x-4 my-6">
             <div className="border-[1px] border-white rounded-md p-1 flex items-center justify-center text-center text-[11px] cursor-pointer">
-              <a className="text-white" href="https://portfoliowd.vercel.app/resume">
+              <a
+                className="text-white"
+                href="https://portfoliowd.vercel.app/resume"
+              >
                 {" "}
                 Resume
               </a>
@@ -184,7 +196,7 @@ export default function About() {
         </div>
         <div className="h-[1px] w-[56px] bg-white/20 m-4"></div>
         <div className="text-sm text-white/60  mx-4 flex items-center">
-          <div>Chơi game của tớ {" "}</div>
+          <div>Chơi game của tớ </div>
           <a
             className="text-blue-500 cursor-pointer mx-2"
             href="https://tic-tac-toe-eta-mauve.vercel.app/"

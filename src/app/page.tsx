@@ -5,6 +5,7 @@ import VoxelDogLoader from "../components/voxel-dog-loader";
 import { ContainerPage } from "@/components/ContainerPage";
 import MusicPlayer from "@/components/MusicPlayer";
 import { useMode } from "@/lib/context/modeContext";
+import Image from "next/image";
 
 const LazyVoxelDog = dynamic(() => import("../components/voxel-dog"), {
   ssr: false,
@@ -307,13 +308,15 @@ export default function Home() {
               Mr. Snake eating my contributions.
             </div>
           </div>
-          <img
-            src={`${
+          <Image
+            src={
               !mode
                 ? "https://raw.githubusercontent.com/yunkhngn/yunkhngn/output/github-contribution-grid-snake-dark.svg"
                 : "https://raw.githubusercontent.com/yunkhngn/yunkhngn/output/github-contribution-grid-snake.svg"
-            }`}
+            }
             alt="Snake Eating Contributions"
+            width={500} // hoặc kích thước phù hợp với bạn
+            height={500}
             className="w-full h-full"
           />
         </div>
