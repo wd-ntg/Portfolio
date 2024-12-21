@@ -8,9 +8,9 @@ export default function About() {
   return (
     <ContainerPage key="about-page">
       <main className="sm:col-span-4 sm:col-start-3 sm:row-start-1 min-h-screen sm:my-28 my-16  mx-4">
-        <div className="text-3xl font-semibold text-white">Giới thiệu</div>
+        <div className="text-3xl font-semibold text-white">Introduce</div>
         <div className="text-sm mt-1 text-white/60">
-          Một chút điều thú vị về tớ và những điều lớn lao.
+          A little fun about me and big things.
         </div>
         <div className="text-white/60 mb-2 sm:w-[732px] w-[464px]  sm:overflow-auto overflow-hidden">
           ..................................................................................................................................................................................................................
@@ -24,7 +24,7 @@ export default function About() {
             className="rounded-[50%]"
           />
           <div className="text-3xl font-semibold mt-4 text-white">
-            Nguyễn Trường Giang
+            Truong Giang Nguyen
           </div>
           <div className="my-2 text-sm text-white/60">
             Software Engineer / Dev JS - TS - Golang - Java
@@ -174,10 +174,11 @@ export default function About() {
           </div>
           <div className="h-[1px] w-[90%] bg-white/20 mt-4"></div>
           <div className=" mt-4 text-sm text-white/60 mx-4">
-            Xin chào, tớ là Nguyen Truong Giang , sinh viên chuyên ngành công
-            nghệ phần mềm tại Học viện công nghệ Bưu chính viễn thông. Hiện tại
-            tớ đang là freelancer web developer . Tớ đang hướng tới trở thành
-            một Fullstack Developer và thực hiện thêm nhiều ước mơ phía trước.
+            Hello, I am Nguyen Truong Giang, a programmer who graduated from the
+            University of Posts and Telecommunications with a major in software
+            technology. I am currently a freelance web developer. I am aiming to
+            become a programmer who can solve all the problems that customers
+            bring up and carry out more programming projects in the future.
           </div>
           <div className="flex jutify-center items-center">
             <div className="w-[2px] h-[32px] bg-white my-4"></div>
@@ -186,9 +187,9 @@ export default function About() {
             </div>
           </div>
           <div className="text-sm text-white/60 mx-4">
-            Giới thiệu nhiều hơn một chút về bản thân, tớ sống và làm việc tại
-            Tp Hồ Chí Minh. Tớ thích tìm hiểu về những thứ mới mẻ, thử thách bản
-            thân và không ngừng học hỏi nhiều điều hơn!
+            A little more about myself, I live and work in Ho Chi Minh City. I
+            enjoy exploring new things, challenging myself, and constantly
+            learning more!
           </div>
         </div>
         <div className="mx-4 text-sm text-white/60 italic mt-4">
@@ -196,12 +197,12 @@ export default function About() {
         </div>
         <div className="h-[1px] w-[56px] bg-white/20 m-4"></div>
         <div className="text-sm text-white/60  mx-4 flex items-center">
-          <div>Chơi game của tớ </div>
+          <div>Play my game! </div>
           <a
             className="text-blue-500 cursor-pointer mx-2"
             href="https://tic-tac-toe-eta-mauve.vercel.app/"
           >
-            ở đây
+            at here
           </a>
           <div className="w-36">
             <DotLottieReact src="/animation1.json" loop autoplay />

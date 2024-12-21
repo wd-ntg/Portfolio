@@ -8,7 +8,6 @@ import Image from "next/image";
 export default function Resume() {
   const [isOpenCV, setIsOpenCV] = useState<boolean>(false);
 
-
   const handleOpenCV = () => {
     setIsOpenCV(!isOpenCV);
   };
@@ -22,7 +21,7 @@ export default function Resume() {
       >
         <div className="text-2xl font-semibold text-white">Resume</div>
         <div className="text-sm mt-1 text-white/60">
-          Resume cá nhân của tớ cho nhà tuyển dụng.
+        My personal resume for employers.
         </div>
         <div className="text-white/60 mb-2 sm:w-[732px] w-[272px]  sm:overflow-auto overflow-hidden">
           ..................................................................................................................................................................................................................
@@ -36,7 +35,7 @@ export default function Resume() {
         <div className="text-sm text-blue-500 mt-4">
           {" "}
           <a href="/CV.pdf" download="CV.pdf" className="hover:underline">
-            Tải xuống CV?
+            Download CV?
           </a>
         </div>
         <div className="mb-12 h-[72px] text-xs text-white/60 flex mt-2 ">
@@ -86,7 +85,7 @@ export default function Resume() {
             </svg>
           </div>
           <a href="http://localhost:3000/home" className="cursor-pointer">
-            Quay lại
+            Come back
           </a>
         </div>
       </main>
